@@ -33,7 +33,7 @@
               {{ with .Params.header_menu_title }}{{ $button_title = . }}{{ end }}
 
               {{ if isset .Params "external" }}
-                 <a class='btn site-menu' href='{{ .Params.external }}'>{{ $button_title }}&nbsp;<icon class="fa fa-external-link"></icon></a>
+                 <a class='btn site-menu' href='{{ .Params.external }}'>{{ $button_title }}</a>
               {{ else }}
                 {{ $fnav_title := .Title }}{{ with .Params.navigation_menu_title }}{{ $fnav_title = . }}{{ end }}
                  <a class='btn site-menu' data-title-anchor='{{ anchorize $fnav_title }}' href='#{{ anchorize $fnav_title }}'>{{ $button_title }}</a>
@@ -68,7 +68,6 @@
                     {{ .Content }}
                 </section>
             </article>
-            <div class='post-after{{ if and (ne .Site.Params.invertSectionColors true) (modBool $index_val 2) }} light{{ else if and (eq .Site.Params.invertSectionColors true) (not (modBool $index_val 2)) }} light{{ end }}'></div>
         </div>
     {{ end }}
 </main>

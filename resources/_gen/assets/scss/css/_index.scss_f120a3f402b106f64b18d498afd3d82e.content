@@ -36,7 +36,7 @@ body {
 /* ===== Cover =======*/
 #blog-logo {
   display: block;
-  max-height: 100px;
+  max-height: 300px;
   width: auto;
   margin: 0 auto;
   line-height: 0; }
@@ -101,7 +101,7 @@ body {
     position: relative;
     margin-top: 2rem;
     cursor: pointer;
-    font-family: "Oswald", sans-serif;
+    font-family: "Open Sans", sans-serif;
     text-transform: uppercase;
     font-weight: lighter; }
     #site-head a.btn:hover, #site-head.withCenteredImage a.btn:hover {
@@ -152,13 +152,15 @@ a.fn-item {
 
 /* ========= Content ==========*/
 .post-title {
-  margin: 0; }
+  margin: 0;
+  font-family: "Open Sans Condensed", sans-serif; }
   .post-title a {
     text-decoration: none; }
 
 .post-holder {
   width: 100%;
   height: 100%;
+  font-family: "Open Sans Condensed", sans-serif;
   background-color: var(--color-background);
   color: var(--color-text);
   position: relative;
